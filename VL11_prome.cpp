@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath>
 using namespace std;
 bool prime(int n){
