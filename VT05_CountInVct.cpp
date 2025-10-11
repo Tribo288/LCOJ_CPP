@@ -14,7 +14,7 @@ int main(){
 
     for (int i : a){
         if (i == x){
-            count += 1;
+            count += 1; 
         }
     }
     cout << count;
