@@ -1,7 +1,8 @@
 #include <iostream>
-#include <numbers>
+#include <cmath>
 using namespace std;
 int main(){
     int a; cin >> a;
-    cout << (numbers::pi)
+    double pi = acos(-1); 
+    cout << fixed << setprecision(3) << pi*pow(a,2)/2; 
 }
