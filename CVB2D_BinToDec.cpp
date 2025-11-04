@@ -22,7 +22,9 @@ int main(){
         } 
         outlist[x] = dec; 
     }
-    for (int i : outlist){
-        cout << i << endl; 
+    for (int i = 0 ; i < outlist.size() ; i++){
+        if (i < outlist.size()){
+            cout << -outlist[i] << endl; 
+        }
     } 
 }
