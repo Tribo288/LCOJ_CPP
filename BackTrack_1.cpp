@@ -1,0 +1,28 @@
+/*binary string has N char*/
+#include <iostream>
+using namespace std;
+int arr[100];
+int n;
+void inkq(){
+    for (int j = 1; j <= n ; j++){
+        cout << arr[j] << " ";
+    }
+    cout << endl;
+}
+
+void test(int i){
+    for (int k = 0; k < 2; k++){
+        arr[i] = k;
+        if( i == n){
+            inkq();
+        }
+        else{
+            test(i+1);
+        }
+    }
+}
+
+int main(){
+    cin >> n;
+    test(1);
+}
